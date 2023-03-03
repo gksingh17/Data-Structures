@@ -26,5 +26,18 @@ class ArrayDemo {
         //length of the array is determined by the number of values provided between braces and separated by commas.
         System.out.println("Element at index 0:" + anArray[0]);
         System.out.println("Element at index 0:" + anArray[1]);
+
+        // intialization -> dataType [] nameOfArray = new dataType [size]
+        // dataType [ ] nameOfArray = {value1, value2, value3, value4}
+        int[] newArray = {100, 200, 300,
+        400, 500, 600, 
+        700, 800, 900, 1000};
+
+        //looping in array 
+        for (int i = 0; i < newArray.length; i++ ){
+            System.out.println("Element at index " + i + ":" + newArray[i]);
+        }
+
+
     }
 }
