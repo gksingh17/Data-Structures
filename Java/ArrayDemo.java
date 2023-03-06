@@ -38,6 +38,20 @@ class ArrayDemo {
             System.out.println("Element at index " + i + ":" + newArray[i]);
         }
 
+        
+
+        int a[] = new int[5];
+        a[0] = 12; 
+        a[1] = 34; 
+        a[2] = 11; 
+        a[3] = 48; 
+        a[4] = 50;
+        
+        // a[5] = 51; array index out ou bounds 
+        for (int i = 0; i<a.length; i++){
+            System.out.println(a[i] + " ");
+        }
+
 
     }
 }
