@@ -1,4 +1,4 @@
-package Arrays.Implementation;
+package arrays.implementation;
 public class Characters {
     
     public int id ; 

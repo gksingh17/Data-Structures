@@ -3,7 +3,7 @@ nums1 = [1, 2, 3, 4]
 class solution(object):
 
     def containsduplicate(self, nums):
-        hashset = set()
+        hashset = set()                    #extra memonry  but O(n) time complexity 
         for i in nums:
             if i in hashset:
                 return True 
@@ -11,7 +11,7 @@ class solution(object):
         return False
 
     def containsduplicatesort(self, nums):
-        nums.sort()
+        nums.sort()                          #o(nlogn) sorting
         for i in range(len(nums)-1):
             if nums[i]==nums[i+1]:
                 return True
@@ -19,7 +19,7 @@ class solution(object):
 
 
 sort = solution()
-print(sort.containsduplicate(nums1))
-print(sort.containsduplicatesort(nums1))
+print(sort.containsduplicate(nums))
+print(sort.containsduplicatesort(nums))
     
 
